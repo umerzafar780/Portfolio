@@ -8,7 +8,8 @@
     <title>Umer Zafar - Flutter Developer</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/modern-portfolio.css">
@@ -107,41 +108,40 @@
             <i class="fas fa-arrow-down"></i>
         </div>
     </section>
-        <script>
-            (function () {
-                const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-                if (prefersReduced) return;
-                const card = document.querySelector('.cta-right .cta-card');
-                const container = document.querySelector('.cta-right');
-                const blobA = document.querySelector('.cta-blob-a');
-                const blobB = document.querySelector('.cta-blob-b');
-                if (!card || !container) return;
-                const maxTilt = 6;
-                const parallax = (e) => {
-                    const rect = container.getBoundingClientRect();
-                    const x = (e.clientX - rect.left) / rect.width;
-                    const y = (e.clientY - rect.top) / rect.height;
-                    const tiltX = (maxTilt / 2 - x * maxTilt).toFixed(2);
-                    const tiltY = (y * maxTilt - maxTilt / 2).toFixed(2);
-                    card.style.transform = `rotateX(${tiltY}deg) rotateY(${tiltX}deg) translateY(-4px)`;
-                    if (blobA) blobA.style.transform = `translate(${(x - 0.5) * 16}px, ${(y - 0.5) * 10}px)`;
-                    if (blobB) blobB.style.transform = `translate(${(0.5 - x) * 12}px, ${(0.5 - y) * 8}px)`;
-                };
-                const reset = () => {
-                    card.style.transform = '';
-                    if (blobA) blobA.style.transform = '';
-                    if (blobB) blobB.style.transform = '';
-                };
-                container.addEventListener('mousemove', parallax);
-                container.addEventListener('mouseleave', reset);
-            })();
-        </script>
+    <script>
+        (function () {
+            const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (prefersReduced) return;
+            const card = document.querySelector('.cta-right .cta-card');
+            const container = document.querySelector('.cta-right');
+            const blobA = document.querySelector('.cta-blob-a');
+            const blobB = document.querySelector('.cta-blob-b');
+            if (!card || !container) return;
+            const maxTilt = 6;
+            const parallax = (e) => {
+                const rect = container.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+                const tiltX = (maxTilt / 2 - x * maxTilt).toFixed(2);
+                const tiltY = (y * maxTilt - maxTilt / 2).toFixed(2);
+                card.style.transform = `rotateX(${tiltY}deg) rotateY(${tiltX}deg) translateY(-4px)`;
+                if (blobA) blobA.style.transform = `translate(${(x - 0.5) * 16}px, ${(y - 0.5) * 10}px)`;
+                if (blobB) blobB.style.transform = `translate(${(0.5 - x) * 12}px, ${(0.5 - y) * 8}px)`;
+            };
+            const reset = () => {
+                card.style.transform = '';
+                if (blobA) blobA.style.transform = '';
+                if (blobB) blobB.style.transform = '';
+            };
+            container.addEventListener('mousemove', parallax);
+            container.addEventListener('mouseleave', reset);
+        })();
+    </script>
 
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-badge">Get to know me</span>
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">Passionate developer crafting digital experiences</p>
             </div>
@@ -195,7 +195,6 @@
     <section id="services" class="services-section">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-badge">What I Offer</span>
                 <h2 class="section-title">My Services</h2>
                 <p class="section-subtitle">Professional solutions tailored to your needs</p>
             </div>
@@ -262,7 +261,6 @@
     <section id="projects" class="projects-section">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-badge">My Work</span>
                 <h2 class="section-title">Featured Projects</h2>
                 <p class="section-subtitle">A showcase of my recent work and achievements</p>
             </div>
@@ -278,7 +276,8 @@
                         <div class="project-top-row">
                             <div class="project-tech">React | TypeScript | Tailwind</div>
                             <div class="project-links">
-                                <a href="https://github.com/yourusername/ecommerce-app" target="_blank" class="project-icon" title="GitHub">
+                                <a href="https://github.com/yourusername/ecommerce-app" target="_blank"
+                                    class="project-icon" title="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a href="project-detail.html" target="_blank" class="project-icon" title="View Project">
@@ -304,7 +303,8 @@
                         <div class="project-top-row">
                             <div class="project-tech">Flutter | Firebase | Provider</div>
                             <div class="project-links">
-                                <a href="https://github.com/yourusername/task-manager" target="_blank" class="project-icon" title="GitHub">
+                                <a href="https://github.com/yourusername/task-manager" target="_blank"
+                                    class="project-icon" title="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a href="project-detail.html" target="_blank" class="project-icon" title="View Project">
@@ -330,7 +330,8 @@
                         <div class="project-top-row">
                             <div class="project-tech">React | Node.js | Express | MongoDB</div>
                             <div class="project-links">
-                                <a href="https://github.com/yourusername/fitness-tracker" target="_blank" class="project-icon" title="GitHub">
+                                <a href="https://github.com/yourusername/fitness-tracker" target="_blank"
+                                    class="project-icon" title="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a href="project-detail.html" target="_blank" class="project-icon" title="View Project">
@@ -356,7 +357,8 @@
                         <div class="project-top-row">
                             <div class="project-tech">JavaScript | API | CSS</div>
                             <div class="project-links">
-                                <a href="https://github.com/yourusername/weather-app" target="_blank" class="project-icon" title="GitHub">
+                                <a href="https://github.com/yourusername/weather-app" target="_blank"
+                                    class="project-icon" title="GitHub">
                                     <i class="fab fa-github"></i>
                                 </a>
                                 <a href="project-detail.html" target="_blank" class="project-icon" title="View Project">
@@ -406,7 +408,6 @@
     <section id="skills" class="skills-section">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-badge">My Expertise</span>
                 <h2 class="section-title">Skills & Technologies</h2>
                 <p class="section-subtitle">Here are the technologies and tools I work with to bring ideas to life</p>
             </div>
@@ -577,7 +578,6 @@
     <section id="education" class="education-experience-section">
         <div class="section-container">
             <div class="section-header">
-                <span class="section-badge">My Journey</span>
                 <h2 class="section-title">Education & Experience</h2>
                 <p class="section-subtitle">Academic background and professional journey</p>
             </div>
@@ -680,9 +680,9 @@
         </div>
         <div class="contact-wrap">
             <header class="contact-header">
-                <span class="section-badge">Let's Connect</span>
                 <h2 class="contact-title">Let's work <span class="accent">together</span></h2>
-                <p class="contact-desc">Feel free to reach out if you want to collaborate with me, or simply have a chat.</p>
+                <p class="contact-desc">Feel free to reach out if you want to collaborate with me, or simply have a
+                    chat.</p>
             </header>
             <div class="contact-cards">
                 <a class="info-card" href="mailto:youremail@example.com">
@@ -713,15 +713,19 @@
                 <h3>Connect with me</h3>
             </div>
             <div class="connect-row">
-                <a class="connect-btn linkedin" href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a class="connect-btn email" href="mailto:youremail@example.com"><i class="fas fa-envelope"></i> Email</a>
-                <a class="connect-btn github" href="https://github.com/yourusername" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                <a class="connect-btn linkedin" href="https://www.linkedin.com/in/yourhandle" target="_blank"
+                    rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a class="connect-btn email" href="mailto:youremail@example.com"><i class="fas fa-envelope"></i>
+                    Email</a>
+                <a class="connect-btn github" href="https://github.com/yourusername" target="_blank" rel="noopener"><i
+                        class="fab fa-github"></i> GitHub</a>
             </div>
             <section class="availability-card" aria-label="Availability and CV">
                 <div class="availability-left">
                     <span class="status-badge"><i class="fas fa-circle"></i> Available for work</span>
                     <h3 class="availability-title">Open for freelance projects</h3>
-                    <p class="availability-copy">I'm currently taking on new clients. Expect clean, modern UI, solid performance, and clear communication from kickoff to delivery.</p>
+                    <p class="availability-copy">I'm currently taking on new clients. Expect clean, modern UI, solid
+                        performance, and clear communication from kickoff to delivery.</p>
                     <div class="availability-actions">
                         <a class="btn-primary-lg" href="files/Resume.pdf" download>
                             <i class="fas fa-download"></i>
@@ -758,9 +762,9 @@
     <script src="js/modern-portfolio.js"></script>
 
     <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
