@@ -249,7 +249,6 @@ a {
 .nav-links {
     display: flex;
     gap: 2.5rem;
-    margin-left: auto;
 }
 
 .nav-link {
