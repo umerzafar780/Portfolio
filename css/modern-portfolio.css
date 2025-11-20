@@ -202,6 +202,7 @@ a {
     padding: 0 2rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .navbar-name {
@@ -217,7 +218,7 @@ a {
     transition: all 0.3s ease;
     position: relative;
     animation: shimmer 3s linear infinite;
-    margin-right: 200px;
+    flex-shrink: 0;
 }
 
 @keyframes shimmer {
@@ -249,7 +250,6 @@ a {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-left: auto;
 }
 
 .nav-links {
