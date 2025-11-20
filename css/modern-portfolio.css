@@ -2792,6 +2792,12 @@ a {
         padding: 0 1rem;
     }
     
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
     .nav-links {
         display: none;
     }
