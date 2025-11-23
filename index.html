@@ -63,7 +63,7 @@
                     Hi, I'm <span class="gradient-text">Umer Zafar</span>
                 </h1>
                 <h2 class="hero-subtitle reveal-left">
-                    <span class="typing-text">Flutter Developer</span>
+                    <span class="rotating-text"></span>
                     <span class="cursor">|</span>
                 </h2>
                 <p class="hero-description reveal-left">
@@ -795,6 +795,32 @@
         window.addEventListener('load', () => {
             reveal();
         });
+
+        // Rotating text animation
+        const titles = ['Flutter Developer', 'Software Engineer'];
+        let currentIndex = 0;
+        const rotatingTextElement = document.querySelector('.rotating-text');
+
+        function rotateText() {
+            if (rotatingTextElement) {
+                rotatingTextElement.style.opacity = '0';
+                
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % titles.length;
+                    rotatingTextElement.textContent = titles[currentIndex];
+                    rotatingTextElement.style.opacity = '1';
+                }, 500);
+            }
+        }
+
+        // Set initial text
+        if (rotatingTextElement) {
+            rotatingTextElement.textContent = titles[0];
+            rotatingTextElement.style.transition = 'opacity 0.5s ease';
+        }
+
+        // Rotate every 3 seconds
+        setInterval(rotateText, 3000);
     </script>
 </body>
 
